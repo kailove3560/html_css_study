@@ -1,0 +1,14 @@
+
+## vscode 초기 설치 플러그인 목록
+1. korean language pack - 한글패치
+2. live server -실시간 코드 출력 연동
+3. material Thema - 이쁜 테마
+4. Auto Rename Tag -태그 쌍으로 변경 기능
+
+## 폰트 글꼴 확대 단축키 설정법
+- 파일 -> 기본 설정 -> 바로가기 키 -> 글꼴 검색
+-> 단축키 지정
+
+##코딩단축키##
+
+1.alt shift 방향키 누르면 아래로 쭉 복사 나열
