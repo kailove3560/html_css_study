@@ -4,6 +4,8 @@
 2. live server -실시간 코드 출력 연동
 3. material Thema - 이쁜 테마
 4. Auto Rename Tag -태그 쌍으로 변경 기능
+5. beautify - 코드 자동 줄 맞춤 
+-파일> 기본설정> 바로가기> 키 >hooky검색 
 
 ## 폰트 글꼴 확대 단축키 설정법
 - 파일 -> 기본 설정 -> 바로가기 키 -> 글꼴 검색
