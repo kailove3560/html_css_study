@@ -1,0 +1,8 @@
+@import "side.css";
+
+/*side.css를 main.css에 끌어다 놓아서 main적용시 side 까지 적용된다.*/
+h1,
+p {
+    color: red;
+    background: orange;
+}
