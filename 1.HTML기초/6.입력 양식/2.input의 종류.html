@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="/join">
+
+        아이디: <input type="text"> <br>
+        이메일: <input type="email"> <br>
+        비밀번호: <input type="password"> <br>
+
+        취미:
+        <input type="checkbox" name="hobby">공부
+        <input type="checkbox" name="hobby">독서
+        <input type="checkbox" name="hobby">게임 <br>
+
+        이메일 수신 여부:
+        <input type="radio" name="email-verify" checked>예 <!--checked는 홈페이지 최초 접속시 해당 빈칸을 미리 채워두게 하는 기능이다-->
+        <input type="radio" name="email-verify">아니오 <br>
+
+        SMS 수신 여부:
+        <input type="radio" name="sms-verify"checked>예
+        <input type="radio" name="sms-verify">아니오 <br>
+
+        <input type="file">
+
+        <br>
+
+        칵테일 알코올 도수:
+        <input type="range" min="0" max="10" step="1" value="3">
+        <!--게이지로 범위 만들때 range-->
+
+        <br>
+
+        주문수량:
+        <input type="number" value="1">
+
+        <input type="hidden" name="login-time" value="2021-02-01 :14:41:00">
+
+        <br>
+        <input type="button" value="그냥 버튼" name="" id="">
+        <button type="button">그냥 버튼</button> <!--검증함수를위해 공버튼에 서브밋 기능을 넣으면 검증 할 수 있는 기회가 있다. 하지만 인풋으로 넣을시 검증없이 서버에 넘기는 단점이 있다.-->
+        <!--인풋 버튼과 그냥 버튼의 차이, 인풋 버튼은 닫는 태그가 없다 그래서 이미지를 넣지 못한다. 하지만 아래 버튼은 이미지를 버튼으로 쓸 수 있다.-->
+
+        <input type="submit" value="회원가입"> <!--submit 기능에는 모든 빈칸을 요구 조건에 만족시켰을 시 submit을 누르면 서버에 정상적으로 넘겨 진행한다.-->
+        <input type="reset" value="초기화">
+
+    </form>
+
+</body>
+
+</html>

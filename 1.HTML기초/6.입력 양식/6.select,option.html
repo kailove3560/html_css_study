@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="#">
+
+        <select>
+            <optgroup>
+                <option>Americano</option>
+                <option selected>Caffe Latte</option>
+                <!--첫 선택지를 카페 라떼로 하고싶으면 셀렉티드-->
+                <option disabled>Cappucctino</option>
+                <!--고를수 없게 만들기-->
+            </optgroup>
+            <optgroup>
+                <option>Orange Juice</option>
+                <option>Lime Juice</option>
+            </optgroup>
+        </select>
+
+        <br><br><br>
+
+        <input type="text" list="fruits"> <!--list에 아이디값을 넣어주고 연동시키면 자동완성을 불러온다.-->
+
+        <datalist id="fruits"> <!-- datalist는 검색시 자동완성을 하는 기능임.-->
+            <option>Apple</option>
+            <option>Orange</option>
+            <option>Mango</option>
+            <option>Pineapple</option>
+            <option>Grape</option>
+        </datalist>
+
+    </form>
+
+</body>
+
+</html>

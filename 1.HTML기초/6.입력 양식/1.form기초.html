@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="/login" method="GET" autocomplete="off" novalidate> <!--autocomplete 를 넣고 타이핑 기록을 저장및 비저장 할 수 있다.-->
+        <!--get의 특징은 무언가를 입력하고 넘기게 되면 데이터가 주소창에 다 들어난다. 하지만 POST 방식은 url에 파라미터값이 보이지 않는다. 즉 은밀한 데이터를 숨겨주는 차이가 있다.-->
+
+        <input type="email" name="mail" placeholder="이메일을 입력하세요!">
+        <!--타입안에 이메일 넣으면 자동으로 검증해줌 ; placeholder -> 입력 가이드-->
+        <input type="password" name="pw" placeholder="비밀번호 입력 4자리 이상">
+        <!--name 속성은 서버와 연동시 필요한 필수 지정 태그이다.-->
+
+
+        <button>로그인</button>
+
+    </form>
+
+</body>
+
+</html>
