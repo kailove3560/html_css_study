@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fruits>li:nth-child(3) {
+            color: orange;
+        }
+
+        .fruits>li:nth-child(2n + 1) {
+            /*even 또는 2n 으로 짝수만 구별 가능, 홀수는 2n+1 또는 odd*/
+            color: blue;
+        }
+
+        .fruits>li:nth-child(odd) {
+            color: red;
+        }
+
+        .fruits>li:nth-child(3n+1) {
+            font-style: italic;
+        }
+
+        .food p:nth-child(2) { /*첫번째 요소만 찾고 그게 p이면 바뀌고 아니면 안먹혀서 보라색이 안먹힌다 1로하면*/
+            color: violet;
+        }
+        .food p:nth-of-type(1) {
+            background: tomato;
+        }
+
+        .box-group > div:first-child { /*그룹과 div 사이에 공백일시 자식부터 자식 후손 첫번째까지 변경*/
+            color: red;
+            font-weight: bold;
+        }
+
+        .fruits li:not(.orange) { /*orange만 빼고 리스트 스타일을 없애기*/
+            list-style: none;
+        }
+    </style>
+</head>
+
+<>
+    <ul class="fruits">
+        <li>딸기</li>
+        <li>사과</li>
+        <li class="orange">오렌지</li>
+        <li>망고</li>
+        <li>바나나</li>
+        <li>목숭아</li>
+        <li>파인애플</li>
+    </ul>
+
+    <hr>
+<div>
+    <div class="food"></div>
+    <div>짜장면</div>
+    <p>볶음밥</p>
+    <p>닭강정</p>
+    <span>짬뽕</span>
+</div>
+
+<hr>
+
+<div class="box-group"> <!--.bo-group>div{$}*3 달런ㄴ 시퀀스인 순차적 숫자 배열-->
+    <div>메롱</div>
+    <div>메롱</div>
+    <div>3
+        <div>3-1</div>
+        <div>3-2</div>
+        <div>3-3</div> <!--3-$ 하면 이렇게 나옴-->
+    </div>
+</div>
+    
+</body>
+
+</html>

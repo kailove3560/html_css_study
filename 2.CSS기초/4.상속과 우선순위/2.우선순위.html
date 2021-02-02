@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            color: red !important; /*important 우선순위는 css 디자인에 디자인이 공통적으로 먹혔을때 우선순위를 결정해주는 요소를 !important*/
+        }
+
+        #c-yellow {
+            color: yellow;
+        }
+
+        .c-green {
+            color: green;
+        }
+
+        div {
+            color: blue;
+
+        }
+        body {
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="c-yellow" class="c-green" style="color:orange;">Hello!!</div>
+
+</body>
+
+</html>
