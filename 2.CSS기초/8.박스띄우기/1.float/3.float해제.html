@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 500px;
+            padding: 20px;
+            border: 3px solid red;
+            /* overflow: hidden; 부모보다 자식이 넘쳤을때 그것을 숨기기 위해 사용함, 그러나 float을 해제하기 위한 방법으로는 적절하지 않다 나중에 스크롤 문제가 생김. */
+
+        }
+        .box {
+            width: 200px;
+            height: 150px;
+            border: 3px solid green;
+            background: yellowgreen;
+            font-size: 50px;
+            float: left;
+        }
+        .clear-box {
+            clear: both;
+        } 
+
+        .container::after { /*최적의 코딩방법? 가상 박스를 컨테이너 에프터 (마지막) 에 블록요소를 넣고 clear를 넣어 float요소를 해제시키는 방법!!*/
+            content: '';
+            display: block;
+            clear: both;
+        }
+        /* .clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+        } 원하는 클래스에 ,clearfix를 부여해서 float을 해제하는 방식이 최고임 ,컨테이너가 여러게 있을 시에*/
+        span {
+            width: 200px;
+            height: 200px;
+            background: 40px;
+            font-size: 40px;
+            /*인라인 요소에 float를 부여하면 block 자동 변환됨*/
+            float: left;
+        }
+    </style>
+</head>
+<body>
+
+    <span>hello</span>
+    
+    <div class="container clearfix">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <!-- 1번방법.<div class="cleasr-box"></div> -->
+    </div>
+
+</body>
+</html>
