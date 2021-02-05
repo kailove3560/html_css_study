@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background: green;
+        }
+        .box:hover {
+            /* animation-name: grow-up;
+            animation-duration: 3s; 애니메이션 지속시간 설정 */
+            animation: grow-up 1s linear 0.1s infinite;
+            /* animation-timing-function: linear; 균일한 속도로 */
+            /* animation-delay: 1s; 1초 있다가 애니메이션 시작 */
+            /* animation-iteration-count: 2; 두번만 연속으로 애니메이션 시작함 */
+            animation-direction: alternate; /*alternate를 넣으면 애니메이션 끊김이 없어용*/
+        }
+        @keyframes grow-up {
+            0% { /*애니메이션이 0프로일때 어떻게 할꺼고*/
+                width: 100px;
+            }
+            75%{
+                width: 500px;
+            }
+            100%{
+                width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

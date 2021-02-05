@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+
+        body {
+            height: 8000px;
+        }
         .grandparent {
             width: 400px;
             height: 300px;
@@ -33,9 +37,14 @@
         }
 
         .absolute {
-            position: absolute;
-            right: 100px;
-            bottom: 150px;
+            position: absolute; /*위치상의 부모인 파랜트 기준으로 움직임*/
+            right: 10px;
+            bottom: 50px;
+        }
+        .fixed {
+            position: fixed; /*위치상의 부모가 누구든 뷰포트 기준으로 움직임을 보여주고있음. 이 기능은 상단 메뉴나 보조 창들을 스크롤에 지장없이 화면에 고정되어있음.*/
+            bottom: 50px;
+            right: 10px;
         }
     </style>
 </head>
@@ -44,7 +53,7 @@
     <div class="grandparent">
         <div class="parent">
             <div class="child">1</div>
-            <div class="child absolute">2</div>
+            <div class="child fixed">2</div>
             <div class="child">3</div>
         </div>
     </div>
